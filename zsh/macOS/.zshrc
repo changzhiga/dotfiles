@@ -219,6 +219,7 @@ hash -d desk=~/Desktop
 hash -d gh=~/Documents/GitHub
 hash -d hexo=~/Dropbox/Projects/hexo
 hash -d surge=~/Library/Mobile\ Documents/iCloud~run~surge/Documents
+hash -d pj=~/Dropbox/Projects
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
