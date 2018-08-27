@@ -96,10 +96,12 @@ esac
  vimrc(){
 	 vim ~/.vimrc #编辑vim配置
  }
-
-ip(){
-   curl ip.cn/$1 #调用ip.cn接口查询ip
-}
+ ip(){
+     curl ip.cn/$1 #调用ip.cn接口查询ip
+ }
+ zshrc(){
+ 	 st ~/.zshrc #编辑zsh配置
+ }
 
  # -------------------------------------------------------------------
  # Git
@@ -112,7 +114,7 @@ ip(){
  alias gb='git branch'
  alias gd='git diff' #显示缓存变化
  alias ghard='git reset --hard'
- alias hbuild="git add --all && git commit -m 'Normal build' && git push origin master && git subtree push --prefix=themes/next next master --squash"
+
  # -------------------------------------------------------------------
 
 # -------------------------------------------------------------------
@@ -134,6 +136,9 @@ echo '已经复制到剪贴板' pbcopy
 # 系统相关 Mac Only
 # -------------------------------------------------------------------
 
+alias sagu="sudo apt-get update"
+alias sagi="sudo apt-get install"
+alias sagrm="sudo apt-get remove"
 
 # -------------------------------------------------------------------
 # 开发相关
@@ -176,7 +181,7 @@ echo '已经复制到剪贴板' pbcopy
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # 选择你所需要的插件
 
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions extract autojump)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions extract autojump sublime)
 
 source $ZSH/oh-my-zsh.sh
 

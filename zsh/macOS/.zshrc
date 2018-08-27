@@ -202,6 +202,7 @@ alias bci='brew cask install'
 alias bui='brew uninstall'
 alias py2="python2.7"
 alias py3="python3"
+alias bdy="cd /Users/changzhiga/Dropbox/Software/BaiduPCS-Go/ && ./BaiduPCS-Go"
 
 # -------------------------------------------------------------------
 # 开发相关
