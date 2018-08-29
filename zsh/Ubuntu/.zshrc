@@ -100,7 +100,7 @@ esac
      curl ip.cn/$1 #调用ip.cn接口查询ip
  }
  zshrc(){
- 	 st ~/.zshrc #编辑zsh配置
+     nano ~/.zshrc #编辑zsh配置
  }
 
  # -------------------------------------------------------------------
@@ -181,7 +181,7 @@ alias sagrm="sudo apt-get remove"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # 选择你所需要的插件
 
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions extract autojump sublime)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions extract autojump)
 
 source $ZSH/oh-my-zsh.sh
 
