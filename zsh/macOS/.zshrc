@@ -39,6 +39,9 @@
  vimrc(){
 	 vim ~/.vimrc
  }
+ surge(){
+ 	st /Users/changzhiga/Library/Mobile\ Documents/iCloud~run~surge/Documents/Custom.conf
+ }
 
 # -------------------------------------------------------------------
 # Directory stuffs
@@ -184,7 +187,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Proxy
-export https_proxy=http://127.0.0.1:8888;export http_proxy=http://127.0.0.1:8888;export all_proxy=socks5://127.0.0.1:8889
+export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
 
 # Homebrew
 export PATH="/usr/local/bin:$PATH"
@@ -192,22 +195,23 @@ export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPS="--extended"
-export FZF_DEFAULT_COMMAND='fd --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build} --type f'
-export FZF_CTRL_T_COMMAND='fd --type f'
-export FZF_ALT_C_COMMAND='fd --type d'
-export FZF_COMPLETION_TRIGGER=''
-export FZF_DEFAULT_OPTS="--height 40% --reverse --border --prompt '>>>' \
-    --bind 'alt-j:preview-down,alt-k:preview-up,alt-v:execute(vi {})+abort,ctrl-y:execute-silent(cat {} | pbcopy)+abort,?:toggle-preview' \
-    --header 'A-j/k: preview down/up, A-v: open in vim, C-y: copy, ?: toggle preview' \
-    --preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null'"
-export FZF_CTRL_T_OPTS=$FZF_DEFAULT_OPTS
-export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window hidden:wrap --bind '?:toggle-preview'"
-export FZF_ALT_C_OPTS="--height 40% --reverse --border --prompt '>>>' \
-    --bind 'alt-j:preview-down,alt-k:preview-up,?:toggle-preview' \
-    --header 'A-j/k: preview down/up, A-v: open in vim, C-y: copy, ?: toggle preview' \
-    --preview 'tree -C {}'"
-bindkey '^T' fzf-completion
-bindkey '^I' $fzf_default_completion
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#export FZF_DEFAULT_OPS="--extended"
+#export FZF_DEFAULT_COMMAND='fd --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build} --type f'
+#export FZF_CTRL_T_COMMAND='fd --type f'
+#export FZF_ALT_C_COMMAND='fd --type d'
+#export FZF_COMPLETION_TRIGGER=''
+#export FZF_DEFAULT_OPTS="--height 40% --reverse --border --prompt '>>>' \
+#    --bind 'alt-j:preview-down,alt-k:preview-up,alt-v:execute(vi {})+abort,ctrl-y:execute-silent(cat {} | pbcopy)+abort,?:toggle-preview' \
+#    --header 'A-j/k: preview down/up, A-v: open in vim, C-y: copy, ?: toggle preview' \
+#    --preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null'"
+#export FZF_CTRL_T_OPTS=$FZF_DEFAULT_OPTS
+#export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window hidden:wrap --bind '?:toggle-preview'"
+#export FZF_ALT_C_OPTS="--height 40% --reverse --border --prompt '>>>' \
+#    --bind 'alt-j:preview-down,alt-k:preview-up,?:toggle-preview' \
+#    --header 'A-j/k: preview down/up, A-v: open in vim, C-y: copy, ?: toggle preview' \
+#    --preview 'tree -C {}'"
+#bindkey '^T' fzf-completion
+#bindkey '^I' $fzf_default_completion
